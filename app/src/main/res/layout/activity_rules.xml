@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RulesActivity">
+
+    <TextView
+        android:id="@+id/usernametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam Rules:"
+        android:layout_gravity="center"
+        android:textColor="#E91E63"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. This examination contains 5 questions.\n\n2.Every question contain 4 options only.\n\n3. Each question is carry of 5 marks.\n\n4. All questions are compulsory.\n\n5. Please read carefully questions before answering the question."
+        android:layout_margin="30dp"
+        android:textSize="22dp"/>
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Test"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>
