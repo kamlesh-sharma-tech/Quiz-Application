@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context=".Question2Activity">
+    tools:context=".Question5Activity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
         android:textSize="25dp"
         android:textColor="#2C3130"
         android:layout_marginTop="40dp"
-        android:text="Q-2. What is 2+2 ?"/>
+        android:text="Q-5. Who is the CEO of Facebook ?"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
             android:id="@+id/radio1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="6"
+            android:text="Jeff Bezos"
             android:layout_marginTop="10dp"
             android:textSize="20dp" />
 
@@ -34,7 +34,7 @@
             android:id="@+id/radio2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="12"
+            android:text="Mark Zuckerburg"
             android:layout_marginTop="20dp"
             android:textSize="20dp" />
 
@@ -42,7 +42,7 @@
             android:id="@+id/radio3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="4"
+            android:text="Elon Musk"
             android:layout_marginTop="20dp"
             android:textSize="20dp" />
 
@@ -50,7 +50,7 @@
             android:id="@+id/radio4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="8"
+            android:text="Guido van Rossum"
             android:layout_marginTop="20dp"
             android:textSize="20dp" />
 

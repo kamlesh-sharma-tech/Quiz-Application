@@ -10,11 +10,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:layout_gravity="center"
         android:textAllCaps="true"
         android:layout_marginTop="60dp"
-        android:text="Register"/>
+        android:text="Create a new account"/>
 
     <EditText
         android:id="@+id/usernametv"
@@ -22,7 +22,10 @@
         android:layout_height="wrap_content"
         android:hint="Enter username"
         android:inputType="textPersonName"
-        android:padding="16sp"
+        android:padding="12sp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_username"
+        android:drawablePadding="10dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="40dp"/>
@@ -33,7 +36,10 @@
         android:layout_height="wrap_content"
         android:hint="Enter password"
         android:inputType="textPassword"
-        android:padding="16sp"
+        android:padding="12sp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="40dp"/>
@@ -44,7 +50,8 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:textSize="20sp"
-        android:padding="16sp"
+        android:padding="12sp"
+        android:background="#3998E2"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="40dp"/>

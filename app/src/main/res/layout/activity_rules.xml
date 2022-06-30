@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".RulesActivity">
 
-    <TextView
-        android:id="@+id/usernametv"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#009688"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:textSize="22dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/usernametv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="kamlesh"
+            android:textAllCaps="true"
+            android:textColor="#4E5161"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,14 +36,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1. This examination contains 5 questions.\n\n2.Every question contain 4 options only.\n\n3. Each question is carry of 5 marks.\n\n4. All questions are compulsory.\n\n5. Please read carefully questions before answering the question."
-        android:layout_margin="30dp"
-        android:textSize="22dp"/>
+        android:textSize="22dp"
+        android:textColor="#3C3939"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/startbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start Test"
-        android:layout_margin="20dp"/>
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="#2196F3"
+        android:padding="20dp"
+        android:layout_marginTop="25dp"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -9,17 +9,28 @@
     tools:context=".ResultActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Thanks for taking the Quiz"
+        android:textSize="30dp"
+        android:textColor="#252424"
+        />
+
+    <TextView
         android:id="@+id/resulttv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:textSize="50dp"/>
+        android:textSize="26dp" />
 
     <Button
-        android:id="@+id/exitbtn"
+        android:id="@+id/exitBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Exit"
         android:textSize="20dp"
-        android:text="Exit"/>
+        android:background="#3998E2"
+        android:layout_marginTop="50dp"/>
 
 </LinearLayout>

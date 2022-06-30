@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class Question2Activity extends AppCompatActivity{
+public class Question5Activity extends AppCompatActivity {
     RadioGroup radioGroup;
     Button nextbtn;
     int count;
@@ -18,7 +18,8 @@ public class Question2Activity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question2);
+        setContentView(R.layout.activity_question5);
+
         radioGroup = findViewById(R.id.radioGroup);
         nextbtn = findViewById(R.id.nextbtn);
         Intent intent = getIntent();
@@ -27,26 +28,25 @@ public class Question2Activity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 int answerRadioButtonId = radioGroup.getCheckedRadioButtonId();
-
                 if (answerRadioButtonId != -1) {
                     RadioButton answer = findViewById(answerRadioButtonId);
-                    if (answer.getText().equals("4")){
-                        Toast.makeText(Question2Activity.this, "Correct Answer", Toast.LENGTH_SHORT).show();
+                    if (answer.getText().equals("Mark Zuckerburg")){
+                        Toast.makeText(Question5Activity.this, "Correct Answer", Toast.LENGTH_SHORT).show();
                         count = count + 5;
-
                     } else {
-                        Toast.makeText(Question2Activity.this, "Incorrect Answer", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Question5Activity.this, "Incorrect Answer", Toast.LENGTH_SHORT).show();
                         count = count - 5;
                     }
-                    Intent intent = new Intent(Question2Activity.this,Question3Activity.class);
+                    Intent intent = new Intent(Question5Activity.this,ResultActivity.class);
                     intent.putExtra("result",count);
                     startActivity(intent);
                     finish();
                 } else {
-                    Toast.makeText(Question2Activity.this, "Please select a answer", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Question5Activity.this, "Please select a answer", Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
+
     }
 }

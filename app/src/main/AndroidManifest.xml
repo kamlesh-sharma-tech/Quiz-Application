@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineExamination">
         <activity
+            android:name=".Question5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Question4Activity"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -24,19 +25,22 @@ public class Question1Activity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 int answerRadioButtonId = radioGroup.getCheckedRadioButtonId();
-                int count = 0;
+                int count=0;
                 if (answerRadioButtonId != -1) {
                     RadioButton answer = findViewById(answerRadioButtonId);
                     if (answer.getText().equals("Dr. Narendra Modi")){
                         Toast.makeText(Question1Activity.this, "Correct Answer", Toast.LENGTH_SHORT).show();
                         count = count + 5;
+                        Log.d("Result",String.valueOf(count));
                     } else {
                         Toast.makeText(Question1Activity.this, "Incorrect Answer", Toast.LENGTH_SHORT).show();
                         count=0;
+                        Log.d("Result",String.valueOf(count));
                     }
                     Intent intent = new Intent(Question1Activity.this,Question2Activity.class);
                     intent.putExtra("result",count);
                     startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(Question1Activity.this, "Please select a answer", Toast.LENGTH_SHORT).show();
                 }

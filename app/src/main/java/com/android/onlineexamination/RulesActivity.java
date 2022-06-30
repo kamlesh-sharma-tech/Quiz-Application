@@ -24,6 +24,7 @@ public class RulesActivity extends AppCompatActivity{
             public void onClick(View view) {
                 Intent intent = new Intent(RulesActivity.this,Question1Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

@@ -10,8 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:textColor="@color/black"
+        android:textSize="40sp"
         android:layout_gravity="center"
         android:textAllCaps="true"
         android:layout_marginTop="60dp"
@@ -23,7 +22,10 @@
         android:layout_height="wrap_content"
         android:hint="Enter username"
         android:inputType="textPersonName"
-        android:padding="16sp"
+        android:padding="12sp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_username"
+        android:drawablePadding="10dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="40dp"/>
@@ -34,7 +36,10 @@
         android:layout_height="wrap_content"
         android:hint="Enter password"
         android:inputType="textPassword"
-        android:padding="16sp"
+        android:padding="12sp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="40dp"/>
@@ -45,28 +50,19 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="20dp"
-        android:padding="16sp"
+        android:padding="12sp"
+        android:background="#3998E2"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="40dp"/>
 
     <TextView
+        android:id="@+id/registertv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Or"
-        android:textSize="25dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:id="@+id/registerbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Create a new account?"
         android:textSize="20dp"
-        android:padding="16sp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginTop="20dp"/>
+        android:textColor="#212020"
+        android:padding="16sp" />
 
 </LinearLayout>

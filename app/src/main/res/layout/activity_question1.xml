@@ -12,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:layout_marginTop="40dp"
-        android:text="Q-1. Who is the prime minister of india ?"/>
+        android:textColor="#2C3130"
+        android:layout_marginTop="50dp"
+        android:text="Q-1. Who is the Prime Minister of India ?"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -60,6 +61,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="next"/>
+        android:text="next"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="#3998E2"/>
 
 </LinearLayout>

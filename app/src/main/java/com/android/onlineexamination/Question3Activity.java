@@ -22,7 +22,7 @@ public class Question3Activity extends AppCompatActivity{
         radioGroup = findViewById(R.id.radioGroup);
         nextbtn = findViewById(R.id.nextbtn);
         Intent intent = getIntent();
-        count = Integer.parseInt(intent.getStringExtra("result"));
+        count = intent.getIntExtra("result",0);
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,11 +34,12 @@ public class Question3Activity extends AppCompatActivity{
                         count = count + 5;
                     } else {
                         Toast.makeText(Question3Activity.this, "Incorrect Answer", Toast.LENGTH_SHORT).show();
-                        count = count + 0;
+                        count = count - 5;
                     }
-                    Intent intent = new Intent(Question3Activity.this,ResultActivity.class);
+                    Intent intent = new Intent(Question3Activity.this,Question4Activity.class);
                     intent.putExtra("result",count);
                     startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(Question3Activity.this, "Please select a answer", Toast.LENGTH_SHORT).show();
                 }
