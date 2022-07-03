@@ -31,10 +31,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 String pass = passwordtv.getText().toString();
                if(uname.isEmpty()){
                    Toast.makeText(this, "Username cannot be empty!", Toast.LENGTH_SHORT).show();
-                   usernametv.setFocusable(true);
+                   usernametv.requestFocus();
                }else if(pass.isEmpty()){
                    Toast.makeText(this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
-                   passwordtv.setFocusable(true);
+                   passwordtv.requestFocus();
                }
                 else {
                     Intent intent = new Intent(RegisterActivity.this, MainActivity.class);

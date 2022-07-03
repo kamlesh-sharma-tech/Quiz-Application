@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String password = getIntent().getStringExtra("password");
                 if(usernametv.getText().toString().isEmpty()){
                     Toast.makeText(this, "Username cannot be empty!", Toast.LENGTH_SHORT).show();
-                    usernametv.setFocusable(true);
+                    usernametv.requestFocus();
                 }
                 else if(passwordtv.getText().toString().isEmpty()){
                     Toast.makeText(this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
-                    passwordtv.setFocusable(true);
+                    passwordtv.requestFocus();
                 }
                 else if(!usernametv.getText().toString().equals(uname) || !passwordtv.getText().toString().equals(password)){
                     Toast.makeText(this, "Invalid Credentials!", Toast.LENGTH_SHORT).show();
